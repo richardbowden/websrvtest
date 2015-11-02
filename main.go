@@ -30,7 +30,7 @@ func logRequest(f http.HandlerFunc) http.HandlerFunc {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, I'm served from %s!", hostName)
+	fmt.Fprintf(w, "Hi there, I'm served from %s!, this is the dev version", hostName)
 }
 
 func main() {
